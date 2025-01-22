@@ -1,7 +1,19 @@
 {
     "name": "writer-container",
     "build": {"dockerfile": "Dockerfile"},
+    "onCreateCommand": "bash .devcontainer/scripts/install_textlint.sh",
     "workspaceMount": "source=${localWorkspaceFolder},target=/home/ubuntu/workdir/work,type=bind",
-    "workspaceFolder": "/home/ubuntu/workdir/work"
+    "workspaceFolder": "/home/ubuntu/workdir/work",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "shd101wyy.markdown-preview-enhanced",
+                "usernamehw.errorlens",
+                "yzhang.markdown-all-in-one",
+                "taichi.vscode-textlint",
+                "DavidAnson.vscode-markdownlint"
+            ]
+        }
+    }
 
 }
