@@ -9,9 +9,11 @@ RUN apt update && apt install -y \
 
 RUN wget https://github.com/jgm/pandoc/releases/download/3.6.2/pandoc-3.6.2-1-amd64.deb \
     && apt install ./pandoc-3.6.2-1-amd64.deb \
+    && rm ./pandoc-3.6.2-1-amd64.deb \
     && wget https://github.com/lierdakil/pandoc-crossref/releases/download/v0.3.18.1a/pandoc-crossref-Linux-X64.tar.xz \
     && tar -xf pandoc-crossref-Linux-X64.tar.xz \
-    && mv pandoc-crossref /usr/local/bin
+    && mv pandoc-crossref /usr/local/bin \
+    && rm pandoc-crossref-Linux-X64.tar.xz
 
 USER ubuntu
 
