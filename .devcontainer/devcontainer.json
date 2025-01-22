@@ -1,0 +1,7 @@
+{
+    "name": "writer-container",
+    "build": {"dockerfile": "Dockerfile"},
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/ubuntu/workdir/work,type=bind",
+    "workspaceFolder": "/home/ubuntu/workdir/work"
+
+}
