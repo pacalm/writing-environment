@@ -1,0 +1,200 @@
+/* @theme custom */
+
+@import "default";
+
+
+section {
+    /* フォント指定 */
+    font-family: "M PLUS 1 Code", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans", Meiryo, sans-serif;
+    font-size: 18pt;
+    --mini-font-size: 12pt;
+    --header-footer-height: 50px;
+}
+
+blockquote {
+    border-top: 0.1em dashed var(--black);
+    font-size: var(--mini-font-size);
+    width: 90%;
+    position: absolute;
+    bottom: var(--header-footer-height);
+    padding-left: 0px;
+}
+
+blockquote::before {
+display: none;
+}
+blockquote::after {
+display: none;
+}
+/* section::after {
+    background: #E9E9E9;
+    color: #454545;
+    border: 1px #454545 solid;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+} */
+
+section.top h1 {
+    color: #5DA797;
+    font-size: 1.6em;
+}
+
+section h3 {
+    color: #5DA797;
+}
+
+section.subtitlepage {
+    background-color: #454545;
+    color: #E9E9E9;
+}
+
+section.subtitlepage h2 {
+    border-bottom: none;
+    color: #E9E9E9;
+    font-size: 1.3em;
+}
+
+section.subtitlepage h2>strong {
+    color: #5DA797;
+    background: none;
+    font-size: 1.5em;
+}
+
+section.subtitlepage strong {
+    color: #f1a0a0;
+    background: none;
+}
+
+section.subtitlepage em {
+    color: #c4c4c4;
+    font-size: 0.7em;
+    background: none;
+}
+
+
+section.subtitlepage header {
+    text-align: right;
+    color: #454545;
+}
+
+section.attention {
+
+    background-color: #fcebc8;
+}
+
+section.attention h2 {
+    border-bottom: none;
+    color: #007406;
+    font-size: 1.3em;
+}
+
+section.attention header {
+    text-align: right;
+    color: #f0f0f0;
+}
+
+section.end {
+    background-color: #5DA797;
+}
+
+section.end h2 {
+    border-bottom: none;
+    color: #E9E9E9;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+section.end header {
+    text-align: right;
+    color: #5DA797;
+    background-color: #5DA797;
+}
+
+header {
+    background-color: #454545;
+    text-align: left;
+    padding: 5px;
+    color: #E9E9E9;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+strong {
+    background: linear-gradient(transparent 80%, #5da797b9 60%);
+}
+
+/* strong {
+    position: absolute;
+    z-index: 10;
+}
+
+strong::before {
+    content: "";
+    width: 110%;
+    height: 0.5em;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 0%, #5DA797 0% 5%, transparent 100%);
+    z-index: -1; */
+/* } */
+
+section.rules {
+    overflow: visible;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60px auto;
+    grid-template-areas:
+        "slideheading"
+        "mainpanel";
+    vertical-align: middle;
+}
+
+section.rules h3 {
+    grid-area: slideheading;
+    font-size: 1.1em;
+    width: 100%;
+    border-bottom: 8px double black;
+}
+
+section.split {
+    overflow: visible;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 60px auto;
+    grid-template-areas:
+        "slideheading slideheading"
+        "leftpanel rightpanel";
+    vertical-align: middle;
+
+}
+
+section.split h3 {
+    grid-area: slideheading;
+    font-size: 1.1em;
+    width: 100%;
+    border-bottom: 8px double black;
+}
+
+section.split .ldiv {
+    grid-area: leftpanel;
+}
+
+section.split .rdiv {
+    grid-area: rightpanel;
+}
+
+section.split h4 {
+    color: #E9E9E9;
+    text-align: center;
+    background-color: #454545;
+    vertical-align: middle;
+    height: auto;
+    margin-top: 0;
+    font-size: 1.0em;
+    padding: 10px;
+}

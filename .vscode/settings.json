@@ -1,0 +1,6 @@
+{
+    "markdown.marp.themes": [
+        // ここに使用したいテーマを追加する
+        "./template/marp_custom_theme.css"
+    ]
+}

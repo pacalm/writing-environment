@@ -11,9 +11,9 @@
                 "usernamehw.errorlens",
                 "yzhang.markdown-all-in-one",
                 "taichi.vscode-textlint",
-                "DavidAnson.vscode-markdownlint"
+                "DavidAnson.vscode-markdownlint",
+                "marp-team.marp-vscode"
             ]
         }
     }
-
 }
