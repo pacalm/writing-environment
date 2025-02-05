@@ -4,6 +4,10 @@
     "onCreateCommand": "bash .devcontainer/scripts/install_textlint.sh",
     "workspaceMount": "source=${localWorkspaceFolder},target=/home/ubuntu/workdir/work,type=bind",
     "workspaceFolder": "/home/ubuntu/workdir/work",
+    "mounts": [
+        "source=${localWorkspaceFolder}/.fonts,target=/home/ubuntu/.fonts,type=bind,consistency=cached"
+    ],
+    "postAttachCommand": "fc-cache -fv",
     "customizations": {
         "vscode": {
             "extensions": [
