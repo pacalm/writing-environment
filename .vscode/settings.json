@@ -2,5 +2,12 @@
     "markdown.marp.themes": [
         // ここに使用したいテーマを追加する
         "./template/marp_custom_theme.css"
-    ]
+    ],
+    "[markdown]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.markdownlint": "always"
+    }
 }
